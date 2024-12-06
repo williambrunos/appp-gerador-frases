@@ -49,8 +49,8 @@ public class MainActivity extends AppCompatActivity {
         TextView textoFrase = findViewById(R.id.TextoFraseDoDia);
         int numero = new Random().nextInt(frases.length);
         textoFrase.setPadding(50, 0, 50, 0);
-        textoFrase.setText(frases[numero].toString());
         textoFrase.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+        textoFrase.setText(frases[numero].toString());
     }
 
     public void mostrarTodasFrases(View view) {
@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 20; i++) {
             int numeroFraseAleatoria = new Random().nextInt(frases.length);
             textoMostrarTodasFrase.append(frases[numeroFraseAleatoria].toString() + "\n\n");
         }
